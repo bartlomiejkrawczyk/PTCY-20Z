@@ -1,0 +1,35 @@
+TITLE "Projekt PTCY cwiczenie 4";
+%         Nazwisko i imiona: Krawczyk Bart³omiej
+                     Zespol: LAB203
+  Wykrywana sekwencja bitow: 111-10
+%
+
+SUBDESIGN PTCY_proj
+(
+   CLK,RES : input;    % zegar, sygnal zerujacy  %
+        BA : input;    % sygnal wejsciowy        %
+        KR : output;   % sygnal wyjsciowy        %
+STAN[3..0] : output;   % aktualny stan automatu  %
+)
+VARIABLE
+		% deklaracja stanów automatu AUT %
+	AUT_SYN: MACHINE OF BITS (Q[3..0]) WITH STATES (ST0=0,ST1=1,ST2=2,ST3=3,ST4=4,ST5=5,ST6=6,ST7=7,ST8=8,ST9=9);
+ 
+BEGIN
+			% OPIS AUTOMATU %
+		AUT_SYN.clk = CLK; AUT_SYN.reset = !RES;
+	case AUT_SYN is                                                         % Stan wykrytej sekwencji: %
+		when ST0 => KR=GND; if (BA == 1) then AUT_SYN=ST1; else AUT_SYN=ST0; end if; % XXXXXX %
+		when ST1 => KR=GND; if (BA == 1) then AUT_SYN=ST2; else AUT_SYN=ST0; end if; % 1XXXXX %
+		when ST2 => KR=GND; if (BA == 1) then AUT_SYN=ST3; else AUT_SYN=ST0; end if; % 11XXXX %
+		when ST3 => KR=GND; if (BA == 1) then AUT_SYN=ST4; else AUT_SYN=ST7; end if; % 111XXX %
+		when ST4 => KR=GND; if (BA == 1) then AUT_SYN=ST5; else AUT_SYN=ST7; end if; % 1111XX %
+		when ST5 => KR=GND; if (BA == 1) then AUT_SYN=ST5; else AUT_SYN=ST6; end if; % 11111X %
+		when ST6 => KR=VCC; if (BA == 1) then AUT_SYN=ST8; else AUT_SYN=ST0; end if; % 111110 %
+		when ST7 => KR=GND; if (BA == 1) then AUT_SYN=ST8; else AUT_SYN=ST0; end if; % 1110XX %
+		when ST8 => KR=GND; if (BA == 1) then AUT_SYN=ST2; else AUT_SYN=ST9; end if; % 11101X %
+		when ST9 => KR=VCC; if (BA == 1) then AUT_SYN=ST1; else AUT_SYN=ST0; end if; % 111010 %
+	end case;
+STAN[]=Q[];
+END;
+

@@ -1,0 +1,613 @@
+Project Information           c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+
+MAX+plus II Compiler Report File
+Version 10.2 07/10/2002
+Compiled: 12/14/2020 20:44:20
+
+Copyright (C) 1988-2002 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+Projekt PTCY cwiczenie 4
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input Output Bidir  Memory  Memory  			 LCs
+POF       Device          Pins  Pins   Pins   Bits % Utilized  LCs  % Utilized
+
+PTCY_proj
+      EP1K30TC144-3        3      5      0    0         0  %    14       0  %
+
+User Pins:                 3      5      0  
+
+
+
+Project Information           c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+
+** STATE MACHINE ASSIGNMENTS **
+
+
+AUT_SYN: MACHINE
+        OF BITS (
+           Q3,
+           Q2,
+           Q1,
+           Q0
+        )
+        WITH STATES (
+                             ST0 = B"0000", 
+                             ST1 = B"0001", 
+                             ST2 = B"0010", 
+                             ST3 = B"0011", 
+                             ST4 = B"0100", 
+                             ST5 = B"0101", 
+                             ST6 = B"0110", 
+                             ST7 = B"0111", 
+                             ST8 = B"1000", 
+                             ST9 = B"1001"
+);
+
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+***** Logic for device 'PTCY_proj' compiled without errors.
+
+
+
+
+Device: EP1K30TC144-3
+
+ACEX 1K Configuration Scheme: Passive Serial
+
+Device Options:
+    User-Supplied Start-Up Clock               = OFF
+    Auto-Restart Configuration on Frame Error  = OFF
+    Release Clears Before Tri-States           = OFF
+    Enable Chip_Wide Reset                     = OFF
+    Enable Chip-Wide Output Enable             = OFF
+    Enable INIT_DONE Output                    = OFF
+    JTAG User Code                             = 7f
+    MultiVolt I/O                              = OFF
+
+                                                                                         
+                                                                                         
+                R R R R R   R R R R   R R R R   R           R R R R R R R   R R R R R R  
+                E E E E E   E E E E   E E E E   E           E E E E E E E   E E E E E E  
+                S S S S S   S S S S   S S S S   S V         S S S S S S S   S S S S S S  
+                E E E E E   E E E E V E E E E   E C         E E E E E E E V E E E E E E  
+                R R R R R   R R R R C R R R R   R C         R R R R R R R C R R R R R R  
+                V V V V V G V V V V C V V V V G V I G G G G V V V V V V V C V V V V V V  
+                E E E E E N E E E E I E E E E N E N N N N N E E E E E E E I E E E E E E  
+                D D D D D D D D D D O D D D D D D T D D D D D D D D D D D O D D D D D D  
+              --------------------------------------------------------------------------_ 
+             / 144 142 140 138 136 134 132 130 128 126 124 122 120 118 116 114 112 110   |_ 
+            /    143 141 139 137 135 133 131 129 127 125 123 121 119 117 115 113 111 109    | 
+      #TCK |  1                                                                         108 | ^DATA0 
+^CONF_DONE |  2                                                                         107 | ^DCLK 
+     ^nCEO |  3                                                                         106 | ^nCE 
+      #TDO |  4                                                                         105 | #TDI 
+     VCCIO |  5                                                                         104 | GND 
+       GND |  6                                                                         103 | VCCINT 
+  RESERVED |  7                                                                         102 | RESERVED 
+  RESERVED |  8                                                                         101 | RESERVED 
+  RESERVED |  9                                                                         100 | RESERVED 
+  RESERVED | 10                                                                          99 | RESERVED 
+  RESERVED | 11                                                                          98 | RESERVED 
+  RESERVED | 12                                                                          97 | RESERVED 
+  RESERVED | 13                                                                          96 | RESERVED 
+  RESERVED | 14                                                                          95 | RESERVED 
+       GND | 15                                                                          94 | VCCIO 
+    VCCINT | 16                                                                          93 | GND 
+  RESERVED | 17                                                                          92 | RESERVED 
+  RESERVED | 18                                                                          91 | STAN0 
+  RESERVED | 19                              EP1K30TC144-3                               90 | STAN3 
+  RESERVED | 20                                                                          89 | STAN2 
+        KR | 21                                                                          88 | STAN1 
+  RESERVED | 22                                                                          87 | RESERVED 
+  RESERVED | 23                                                                          86 | RESERVED 
+     VCCIO | 24                                                                          85 | VCCINT 
+       GND | 25                                                                          84 | GND 
+  RESERVED | 26                                                                          83 | RESERVED 
+  RESERVED | 27                                                                          82 | RESERVED 
+  RESERVED | 28                                                                          81 | RESERVED 
+  RESERVED | 29                                                                          80 | RESERVED 
+  RESERVED | 30                                                                          79 | RESERVED 
+  RESERVED | 31                                                                          78 | RESERVED 
+  RESERVED | 32                                                                          77 | ^MSEL0 
+  RESERVED | 33                                                                          76 | ^MSEL1 
+      #TMS | 34                                                                          75 | VCCINT 
+  ^nSTATUS | 35                                                                          74 | ^nCONFIG 
+  RESERVED | 36                                                                          73 | RESERVED 
+           |      38  40  42  44  46  48  50  52  54  56  58  60  62  64  66  68  70  72  _| 
+            \   37  39  41  43  45  47  49  51  53  55  57  59  61  63  65  67  69  71   | 
+             \--------------------------------------------------------------------------- 
+                R R R G R R R R V R R R R V R G V R C B G G R R V R R R R G R R R R V R  
+                E E E N E E E E C E E E E C E N C E L A N N E E C E E E E N E E E E C E  
+                S S S D S S S S C S S S S C S D C S K   D D S S C S S S S D S S S S C S  
+                E E E   E E E E I E E E E I E   I           E E I E E E E   E E E E I E  
+                R R R   R R R R O R R R R N R   N           R R O R R R R   R R R R O R  
+                V V V   V V V V   V V V V T V   T           V V   V V V V   V V V V   V  
+                E E E   E E E E   E E E E   E               E E   E E E E   E E E E   E  
+                D D D   D D D D   D D D D   D               D D   D D D D   D D D D   D  
+                                                                                         
+                                                                                         
+
+
+N.C. = No Connect. This pin has no internal connection to the device.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (2.5 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (2.5 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+^ = Dedicated configuration pin.
++ = Reserved configuration pin, which is tri-stated during user mode.
+* = Reserved configuration pin, which drives out in user mode.
+PDn = Power Down pin. 
+@ = Special-purpose pin. 
+# = JTAG Boundary-Scan Testing/In-System Programming or Configuration Pin. The JTAG inputs TMS and TDI should be tied to VCC and TCK should be tied to GND when not in use.
+& = JTAG pin used for I/O. When used as user I/O, JTAG pins must be kept stable before and during configuration.  JTAG pin stability prevents accidental loading of JTAG instructions.
+$ = Pin has PCI I/O option enabled. Pin is neither '5.0 V'- nor '3.3 V'-tolerant. 
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+** RESOURCE USAGE **
+
+Logic                Column       Row                                   
+Array                Interconnect Interconnect         Clears/     External  
+Block   Logic Cells  Driven       Driven       Clocks  Presets   Interconnect
+D13      6/ 8( 75%)   0/ 8(  0%)   5/ 8( 62%)    1/2    1/2       4/22( 18%)   
+D15      8/ 8(100%)   0/ 8(  0%)   3/ 8( 37%)    1/2    1/2       5/22( 22%)   
+
+
+Embedded             Column       Row                                   
+Array     Embedded   Interconnect Interconnect         Read/      External  
+Block     Cells      Driven       Driven       Clocks  Write    Interconnect
+
+
+Total dedicated input pins used:                 3/6      ( 50%)
+Total I/O pins used:                             5/96     (  5%)
+Total logic cells used:                         14/1728   (  0%)
+Total embedded cells used:                       0/96     (  0%)
+Total EABs used:                                 0/6      (  0%)
+Average fan-in:                                 3.57/4    ( 89%)
+Total fan-in:                                  50/6912    (  0%)
+
+Total input pins required:                       3
+Total input I/O cell registers required:         0
+Total output pins required:                      5
+Total output I/O cell registers required:        0
+Total buried I/O cell registers required:        0
+Total bidirectional pins required:               0
+Total reserved pins required                     0
+Total logic cells required:                     14
+Total flipflops required:                        4
+Total packed registers required:                 0
+Total logic cells in carry chains:               0
+Total number of carry chains:                    0
+Total logic cells in cascade chains:             0
+Total number of cascade chains:                  0
+Total single-pin Clock Enables required:         0
+Total single-pin Output Enables required:        0
+
+Synthesized logic cells:                         4/1728   (  0%)
+
+Logic Cell and Embedded Cell Counts
+
+Column:  01  02  03  04  05  06  07  08  09  10  11  12  13  14  15  16  17  18  EA  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  Total(LC/EC)
+ A:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ B:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ C:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ D:      0   0   0   0   0   0   0   0   0   0   0   0   6   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     14/0  
+ E:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+ F:      0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0      0/0  
+
+Total:   0   0   0   0   0   0   0   0   0   0   0   0   6   0   8   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0     14/0  
+
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+** INPUTS **
+
+                                                    Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  56      -     -    -    --      INPUT             ^    0    0    0    4  BA
+  55      -     -    -    --      INPUT  G          ^    0    0    0    0  CLK
+  54      -     -    -    --      INPUT  G          ^    0    0    0    0  RES
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+^ = Increased input delay
+* = PCI I/O is enabled
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+** OUTPUTS **
+
+       Fed By Fed By                                Fan-In    Fan-Out
+ Pin     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+  21      -     -    D    --     OUTPUT                 0    1    0    0  KR
+  91      -     -    D    --     OUTPUT                 0    1    0    0  STAN0
+  88      -     -    D    --     OUTPUT                 0    1    0    0  STAN1
+  89      -     -    D    --     OUTPUT                 0    1    0    0  STAN2
+  90      -     -    D    --     OUTPUT                 0    1    0    0  STAN3
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+^ = Increased input delay
+* = PCI I/O is enabled
+@ = Uses single-pin Clock Enable
+& = Uses single-pin Output Enable
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+** BURIED LOGIC **
+
+                                                    Fan-In    Fan-Out
+ IOC     LC     EC   Row  Col  Primitive    Code      INP  FBK  OUT  FBK  Name
+   -      3     -    D    15       DFFE   +            0    2    1    7  Q0
+   -      8     -    D    15       DFFE   +            1    3    1    8  Q1
+   -      6     -    D    15       DFFE   +            0    3    1    8  Q2
+   -      5     -    D    13       DFFE   +            1    2    1    8  Q3
+   -      1     -    D    15       AND2                0    4    0    2  ST3
+   -      7     -    D    13       AND2                0    4    0    2  ST4
+   -      6     -    D    13       AND2                0    4    0    3  ST5
+   -      3     -    D    13       AND2                0    4    0    2  ST8
+   -      4     -    D    15        OR2    s           0    4    0    1  ~35~5~1
+   -      5     -    D    15        OR2    s           1    3    0    1  ~35~5~2
+   -      7     -    D    15        OR2    s           0    4    0    1  ~36~4~1
+   -      1     -    D    13       AND2    s           0    3    0    1  ~38~2~1
+   -      4     -    D    13        OR2                0    4    1    0  :131
+   -      2     -    D    15        OR2                1    2    0    2  :156
+
+
+Code:
+
+s = Synthesized pin or logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+^ = Increased input delay
+* = PCI I/O is enabled
+p = Packed register
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+** FASTTRACK INTERCONNECT UTILIZATION **
+
+Row FastTrack Interconnect:
+
+          Global         Left Half-      Right Half-
+         FastTrack       FastTrack       FastTrack 
+Row     Interconnect    Interconnect    Interconnect    Input Pins     Output Pins     Bidir Pins
+A:       0/144(  0%)     0/ 72(  0%)     0/ 72(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+B:       0/144(  0%)     0/ 72(  0%)     0/ 72(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+C:       0/144(  0%)     0/ 72(  0%)     0/ 72(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+D:       8/144(  5%)     4/ 72(  5%)     0/ 72(  0%)    0/16(  0%)      5/16( 31%)     0/16(  0%)
+E:       0/144(  0%)     0/ 72(  0%)     0/ 72(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+F:       0/144(  0%)     0/ 72(  0%)     0/ 72(  0%)    0/16(  0%)      0/16(  0%)     0/16(  0%)
+
+
+Column FastTrack Interconnect:
+
+         FastTrack                                 
+Column  Interconnect    Input Pins     Output Pins     Bidir Pins
+01:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+02:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+03:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+04:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+05:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+06:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+07:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+08:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+09:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+10:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+11:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+12:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+13:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+14:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+15:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+16:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+17:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+18:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+19:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+20:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+21:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+22:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+23:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+24:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+25:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+26:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+27:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+28:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+29:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+30:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+31:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+32:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+33:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+34:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+35:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+36:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+EA:      0/24(  0%)     0/4(  0%)      0/4(  0%)       0/4(  0%)
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+** CLOCK SIGNALS **
+
+Type     Fan-out       Name
+INPUT        4         CLK
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+** CLEAR SIGNALS **
+
+Type     Fan-out       Name
+INPUT        4         RES
+
+
+Device-Specific Information:  c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+PTCY_proj
+
+** EQUATIONS **
+
+BA       : INPUT;
+CLK      : INPUT;
+RES      : INPUT;
+
+-- Node name is 'KR' from file "ptcy_proj.tdf" line 31, column 15
+-- Equation name is 'KR', type is output 
+KR       =  _LC4_D13;
+
+-- Node name is 'Q0' from file "ptcy_proj.tdf" line 16, column 29
+-- Equation name is 'Q0', location is LC3_D15, type is buried.
+Q0       = DFFE( _EQ001, GLOBAL( CLK), GLOBAL( RES),  VCC,  VCC);
+  _EQ001 =  _LC2_D15
+         #  _LC5_D15;
+
+-- Node name is 'Q1' from file "ptcy_proj.tdf" line 16, column 29
+-- Equation name is 'Q1', location is LC8_D15, type is buried.
+Q1       = DFFE( _EQ002, GLOBAL( CLK), GLOBAL( RES),  VCC,  VCC);
+  _EQ002 = !BA &  ST5
+         #  BA &  _LC7_D15
+         #  _LC2_D15;
+
+-- Node name is 'Q2' from file "ptcy_proj.tdf" line 16, column 29
+-- Equation name is 'Q2', location is LC6_D15, type is buried.
+Q2       = DFFE( _EQ003, GLOBAL( CLK), GLOBAL( RES),  VCC,  VCC);
+  _EQ003 =  ST5
+         #  ST3
+         #  ST4;
+
+-- Node name is 'Q3' from file "ptcy_proj.tdf" line 16, column 29
+-- Equation name is 'Q3', location is LC5_D13, type is buried.
+Q3       = DFFE( _EQ004, GLOBAL( CLK), GLOBAL( RES),  VCC,  VCC);
+  _EQ004 =  BA &  _LC1_D13
+         # !BA &  ST8;
+
+-- Node name is 'STAN0' from file "ptcy_proj.tdf" line 33, column 5
+-- Equation name is 'STAN0', type is output 
+STAN0    =  Q0;
+
+-- Node name is 'STAN1' from file "ptcy_proj.tdf" line 33, column 5
+-- Equation name is 'STAN1', type is output 
+STAN1    =  Q1;
+
+-- Node name is 'STAN2' from file "ptcy_proj.tdf" line 33, column 5
+-- Equation name is 'STAN2', type is output 
+STAN2    =  Q2;
+
+-- Node name is 'STAN3' from file "ptcy_proj.tdf" line 33, column 5
+-- Equation name is 'STAN3', type is output 
+STAN3    =  Q3;
+
+-- Node name is 'ST3' from file "ptcy_proj.tdf" line 16, column 68
+-- Equation name is 'ST3', location is LC1_D15, type is buried.
+ST3      = LCELL( _EQ005);
+  _EQ005 =  Q0 &  Q1 & !Q2 & !Q3;
+
+-- Node name is 'ST4' from file "ptcy_proj.tdf" line 16, column 74
+-- Equation name is 'ST4', location is LC7_D13, type is buried.
+ST4      = LCELL( _EQ006);
+  _EQ006 = !Q0 & !Q1 &  Q2 & !Q3;
+
+-- Node name is 'ST5' from file "ptcy_proj.tdf" line 16, column 80
+-- Equation name is 'ST5', location is LC6_D13, type is buried.
+ST5      = LCELL( _EQ007);
+  _EQ007 =  Q0 & !Q1 &  Q2 & !Q3;
+
+-- Node name is 'ST8' from file "ptcy_proj.tdf" line 16, column 98
+-- Equation name is 'ST8', location is LC3_D13, type is buried.
+ST8      = LCELL( _EQ008);
+  _EQ008 = !Q0 & !Q1 & !Q2 &  Q3;
+
+-- Node name is '~35~5~1' from file "ptcy_proj.tdf"
+-- Equation name is '~35~5~1', location is LC4_D15, type is buried.
+-- synthesized logic cell 
+_LC4_D15 = LCELL( _EQ009);
+  _EQ009 =  Q0 & !Q1 & !Q2 &  Q3
+         # !Q0 & !Q1 & !Q3
+         # !Q0 & !Q2 & !Q3;
+
+-- Node name is '~35~5~2' from file "ptcy_proj.tdf"
+-- Equation name is '~35~5~2', location is LC5_D15, type is buried.
+-- synthesized logic cell 
+_LC5_D15 = LCELL( _EQ010);
+  _EQ010 =  BA &  ST5
+         # !BA &  ST8
+         #  BA &  _LC4_D15;
+
+-- Node name is '~36~4~1' from file "ptcy_proj.tdf"
+-- Equation name is '~36~4~1', location is LC7_D15, type is buried.
+-- synthesized logic cell 
+_LC7_D15 = LCELL( _EQ011);
+  _EQ011 = !Q0 & !Q1 & !Q2 &  Q3
+         #  Q0 & !Q1 & !Q2 & !Q3
+         # !Q0 &  Q1 & !Q2 & !Q3;
+
+-- Node name is '~38~2~1' from file "ptcy_proj.tdf"
+-- Equation name is '~38~2~1', location is LC1_D13, type is buried.
+-- synthesized logic cell 
+_LC1_D13 = LCELL( _EQ012);
+  _EQ012 =  Q1 &  Q2 & !Q3;
+
+-- Node name is ':131' from file "ptcy_proj.tdf" line 31, column 17
+-- Equation name is '_LC4_D13', type is buried 
+_LC4_D13 = LCELL( _EQ013);
+  _EQ013 = !Q0 &  Q1 &  Q2 & !Q3
+         #  Q0 & !Q1 & !Q2 &  Q3;
+
+-- Node name is ':156' from file "ptcy_proj.tdf" line 16, column 92
+-- Equation name is '_LC2_D15', type is buried 
+_LC2_D15 = LCELL( _EQ014);
+  _EQ014 = !BA &  ST3
+         # !BA &  ST4;
+
+
+
+Project Information           c:\users\bartek\desktop\ptcy\lab 4\ptcy_proj.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'ACEX1K' family
+
+      CARRY_CHAIN                         = ignore
+      CARRY_CHAIN_LENGTH                  = 32
+      CASCADE_CHAIN                       = ignore
+      CASCADE_CHAIN_LENGTH                = 2
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SUBFACTOR_EXTRACTION                = on
+      IGNORE_SOFT_BUFFERS                 = on
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = on
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Use Quartus Fitter                        = on
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:01
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:01
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 25,189K
